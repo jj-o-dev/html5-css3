@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <H1>Imagens dinâmicas</H1>
+    <p>Com a tag &lt source &gt podemos adicionar imagens que se adaptam em diferentes tamanhos de tela </p>
+
+    
+
+
+    <picture>
+
+
+        <source media="(max-width:750px )" srcset="IMAGENS/Imagem-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="IMAGENS/Imagem-m.png" type="image/png">
+        <img src="IMAGENS/Imagem-g.png" alt="imagem g">
+    
+    
+    </picture>
+    
+    <h1>Áudios</h1>
+    <p>Agora vamos colocar alguns áudios </p>
+
+    <audio preload="none" controls> 
+        <source src="midia/Built to Last (Instrumental) - NEFFEX.mp3" type="audio/mpeg">
+        <source src="midia/X2Download.com - MC Moana - VAI LUAN MEME OFICIAL🎶❤️ (128 kbps).mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(113, 247, 147);
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+Medidas de fontes no css
+    Medidas Absolutas
+    cm, mm, in(inch=polegada), px, pt, pc
+
+    Medidas Relativas
+    em, ex, rem, Vw, vh, %
+
+    16px geralmente é = 1em
+    32px = 2em, 8px = 0.5em
+    recomenda-se sempre usar apenas px ou em 
+*/
+    font-size: 16px;
+    /*
+    peso da fonte = font-weight
+    lighter, normal, bold, bolder
+    */
+    font-weight: lighter;
+}
+
+h1{
+    /*
+    SHORTHAND para a fonte
+  font:  font-style font-weight font-size font-family 
+  */
+  font: italic bold 3em Times, sans-serif;
+}

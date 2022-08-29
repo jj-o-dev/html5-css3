@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*
+ id no HTML = # no CSS (pode existir apenas 1 por documento)
+ class no HTML = . no CSS (podem existir várias no mesmo documento)
+*/
+body{
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: blue;
+}
+
+h1#main{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    color: rgb(78, 20, 238);
+}
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+.basico{
+    color: rgb(52, 255, 1);
+}
+
+.inter{
+    color: yellow;
+}
+
+.avançado{
+    color: red;
+}

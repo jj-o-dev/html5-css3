@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(71, 71, 71);
+        }
+        header{
+            padding: 10px;
+            margin: 10px;
+            background-color: antiquewhite;
+        }
+        nav{
+            background-color: blue;
+            box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.856);
+        }
+        nav > a{
+            color: whitesmoke;
+            margin-right: 20px;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        nav > a:hover{
+            color: rgb(0, 255, 13);
+            text-decoration: underline;
+        }
+        main{
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.877);
+        }
+        article{
+            background-color: lightgray;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        main > p{
+            text-align: justify;
+        }
+        span{
+            background-color: grey;
+            font-style: italic;
+            font-weight: bold;
+            padding: 2px 5px;
+        }
+        footer{
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+            padding: 10px 20px;
+            margin: 20px -8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Título principal</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre qualquer coisa</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam harum obcaecati aut quisquam? Recusandae possimus ipsa sit pariatur eum quae eos dolores cupiditate, necessitatibus nam quidem a! Animi, ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ex tenetur velit excepturi? Fugit vel a sed natus quia, eveniet cum asperiores enim mollitia saepe. Molestiae praesentium sit possimus maxime. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, error. Maxime nobis omnis quia, qui harum odit nostrum dolores voluptatibus commodi adipisci quam repellendus ea nulla rerum quidem saepe repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ex quaerat accusantium vero praesentium nisi illo, nam excepturi! In, eaque facere! Vero deleniti atque nesciunt porro dolores amet consectetur quisquam.</p>
+                <span>
+                    Escrito por João Paulo.
+                </span>
+            </article>
+            
+        </section>
+    </main>
+    <footer>
+        &#9763; Made by JJ
+    </footer>
+</body>
+</html>

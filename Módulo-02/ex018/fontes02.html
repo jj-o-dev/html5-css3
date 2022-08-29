@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: "Old London";
+            src: url(OldLondon.ttf), url(OldLondonAlternate.ttf);
+            font-weight: normal;
+            font-style: normal;
+            /*
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple advanced Typography)
+            - svg   
+            */
+        }
+        body{
+            background-color: rgb(92, 57, 250);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: Old London, Times, Serif;
+            font-size: 3em;
+            font-weight: bolder;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título genérico</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi, ex dolorem id unde cumque. Ipsa modi veritatis neque porro ea quidem culpa non voluptatum ratione cupiditate dicta, voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, odio. Aliquam asperiores, ut libero quis dignissimos iste quaerat modi harum exercitationem non culpa placeat? Alias, itaque cupiditate. Sed, deserunt voluptate!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quaerat quasi, reiciendis, nostrum itaque necessitatibus dolorum impedit, temporibus ea illum eaque quod. Voluptas consequatur atque, vero iste aspernatur quas repellendus.</p>
+</body>
+</html>
