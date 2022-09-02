@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oooh+Baby&family=Prata&family=Tangerine:wght@400;700&display=swap');
+:root {
+    --fonte-texto: 'Oooh Baby', cursive;
+    --fonte-titulo: 'Prata', serif;
+    --fonte-02: 'Great Vibes', cursive;
+    --fonte-03: 'Tangerine', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 2em;
+    background-color: rgb(153, 127, 70);
+}
+
+header {
+    font-family: var(--fonte-titulo);
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 20px;
+    font-size: 5vw;
+    display: block;
+}
+
+header p {
+    padding-bottom: 20px;
+}
+
+header > p > a {
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+    font-weight: normal; 
+}
+
+header > p > a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section{
+    background-color: black;
+    line-height: 1.5em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-size: 3vw;
+}
+
+section p {
+    font-family: var(--fonte-03);
+    font-weight: normal;
+    color: white;
+}
+
+footer {
+    font-family: var(--fonte-titulo);
+    font-size: 0.7em;
+    text-align: center;
+}
+
+footer  a {
+    color: rgb(202, 202, 202);
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
