@@ -27,7 +27,7 @@ header {
 
 header h1 {
     padding-top: 20px;
-    font-size: 6vw;
+    font-size: 7vw;
 }
 
 header p {
@@ -52,7 +52,7 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    font-size: 6.5vw;
+    font-size: 6vw;
 }
 
 section p {
@@ -88,7 +88,7 @@ section#img2 {
 
 footer {
     font-family: var(--fonte-titulo);
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     text-align: center;
     font-weight: 550;
 }
