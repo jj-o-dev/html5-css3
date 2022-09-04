@@ -11,12 +11,13 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 body {
     min-height: 100vh;
     font-size: 2em;
-    background-color: rgb(153, 127, 70);
+    background-color: rgb(165, 140, 85);
 }
 
 header {
@@ -26,12 +27,12 @@ header {
 
 header h1 {
     padding-top: 20px;
-    font-size: 5vw;
-    display: block;
+    font-size: 6vw;
 }
 
 header p {
     padding-bottom: 20px;
+    font-size: 2vw;
 }
 
 header > p > a {
@@ -51,7 +52,7 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    font-size: 3vw;
+    font-size: 6.5vw;
 }
 
 section p {
@@ -60,14 +61,40 @@ section p {
     color: white;
 }
 
+section.imagem {
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.imagem > p {
+    display: inline-block;
+    text-shadow: 1px 1px 0px black;
+    background-color: rgba(0, 0, 0, 0.603);
+    padding: 20px 20px;
+}
+
+section#img1 {
+    background-image: url(imagens/pexels-riya-kumari-874684.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+section#img2 {
+    background-image: url(imagens/pexels-pixabay-415571\ \(1\).jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 footer {
     font-family: var(--fonte-titulo);
-    font-size: 0.7em;
+    font-size: 1.5vw;
     text-align: center;
+    font-weight: 550;
 }
 
 footer  a {
-    color: rgb(202, 202, 202);
+    color: rgb(230, 230, 230);
     text-decoration: none;
 }
 
