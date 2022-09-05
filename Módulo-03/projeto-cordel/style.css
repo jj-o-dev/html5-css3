@@ -27,12 +27,12 @@ header {
 
 header h1 {
     padding-top: 20px;
-    font-size: 7vw;
+    font-size: 4em;
 }
 
 header p {
     padding-bottom: 20px;
-    font-size: 2vw;
+    font-size: 1.2em;
 }
 
 header > p > a {
@@ -52,7 +52,7 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    font-size: 6vw;
+    font-size: 3.6em;
 }
 
 section p {
@@ -88,9 +88,9 @@ section#img2 {
 
 footer {
     font-family: var(--fonte-titulo);
-    font-size: 1.7vw;
+    font-size: 0.7em;
     text-align: center;
-    font-weight: 550;
+    text-decoration: solid;
 }
 
 footer  a {
@@ -102,3 +102,23 @@ footer a:hover{
     text-decoration: underline;
     font-weight: bold;
 }
+
+@media (orientation: portrait) {
+    header > h1 {
+        font-size: 1.8em;
+    }
+    header > p {
+        font-size: 0.7em;
+    }
+    section {
+        font-size: 1.6em;
+        text-align: center;
+        padding: 30px;
+    }
+    footer {
+        font-size: 0.5em;
+    }
+}
+
+
+/*  @media (orientation: landscape ou portrait) */
