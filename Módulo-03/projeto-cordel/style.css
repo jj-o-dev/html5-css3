@@ -76,7 +76,7 @@ section.imagem > p {
 
 section#img1 {
     background-image: url(imagens/pexels-pixabay-33044\ \(1\).jpg);
-    background-position: center center;
+    background-position: right center;
     background-repeat: no-repeat;
 }
 
@@ -105,18 +105,18 @@ footer a:hover{
 
 @media (orientation: portrait) {
     header > h1 {
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
     header > p {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
     section {
-        font-size: 1.6em;
+        font-size: 1.4em;
         text-align: center;
-        padding: 30px;
+        padding: 20px;
     }
     footer {
-        font-size: 0.5em;
+        font-size: 0.4em;
     }
 }
 
