@@ -121,4 +121,14 @@ footer a:hover{
 }
 
 
-/*  @media (orientation: landscape ou portrait) */
+/*  @media (orientation: landscape ou portrait) 
+    "Vamos ver agora alguns breakpoints comuns em termos de larguras dos dispositivos:
+
+    320px — 480px: dispositivos móveis
+    481px — 768px: iPads, tablets
+    769px — 1024px: telas pequenas, laptops
+    1025px — 1200px: desktops, telas grandes
+    1201px e acima —  telas muito grandes, TVs
+    
+    Como dito anteriormente, esses breakpoints podem diferir e não há um padrão definido com exatidão, mas a lista acima compreende os que são usados normalmente."
+*/
