@@ -25,12 +25,32 @@
             border-collapse: collapse;
             width: 500px;
             height: 120px;
-            box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.808);
+            box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.808);
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.2em;
+            background-color: black;
+            color: white;
+            padding: 7px;
+            font-weight: bolder;
         }
 
         thead, tfoot{
-            background-color: rgb(167, 167, 167);
+            background-color: rgb(80, 80, 80);
+            color: whitesmoke;
             height: 20px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(80, 80, 80);
+        }
+
+        tbody > tr:nth-child(even){ /* odd, even, 2n ou 2n-1 */
+            background-color: lightgray;
         }
 
         td, th {
@@ -51,6 +71,7 @@
     <!--
         Anatomia para tabelas grandes
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -59,10 +80,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População brasileira</caption>
         <thead>
             <tr>
-                <th>Unidade Federativa </th>
-                <th>População</th>
+                <th scope="col">Unidade Federativa </th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -176,9 +198,25 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td class="numero">213 317 639</td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis eaque dignissimos ipsam officiis commodi quisquam recusandae? Vitae cupiditate aperiam quidem impedit neque mollitia asperiores, reiciendis beatae amet eius iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus odit magni quia, voluptas distinctio. Numquam autem harum nobis a omnis corporis nesciunt voluptate ipsum voluptatem quisquam! Facilis, architecto earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fuga expedita tempora aliquid dolorem voluptatum dolorum laboriosam enim provident quos nihil omnis qui deleniti itaque inventore vel harum, cumque quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, pariatur qui possimus non cum recusandae. Neque pariatur consequuntur ipsa quo dolor ipsam provident debitis non. Deserunt sapiente sit libero et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi neque quasi dolore adipisci enim earum quos voluptate rem molestias accusamus dolorem placeat, pariatur quis asperiores ea blanditiis deleniti repudiandae voluptatibus.</p>
+     
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis eaque dignissimos ipsam officiis commodi quisquam recusandae? Vitae cupiditate aperiam quidem impedit neque mollitia asperiores, reiciendis beatae amet eius iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus odit magni quia, voluptas distinctio. Numquam autem harum nobis a omnis corporis nesciunt voluptate ipsum voluptatem quisquam! Facilis, architecto earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fuga expedita tempora aliquid dolorem voluptatum dolorum laboriosam enim provident quos nihil omnis qui deleniti itaque inventore vel harum, cumque quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, pariatur qui possimus non cum recusandae. Neque pariatur consequuntur ipsa quo dolor ipsam provident debitis non. Deserunt sapiente sit libero et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi neque quasi dolore adipisci enim earum quos voluptate rem molestias accusamus dolorem placeat, pariatur quis asperiores ea blanditiis deleniti repudiandae voluptatibus.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis eaque dignissimos ipsam officiis commodi quisquam recusandae? Vitae cupiditate aperiam quidem impedit neque mollitia asperiores, reiciendis beatae amet eius iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus odit magni quia, voluptas distinctio. Numquam autem harum nobis a omnis corporis nesciunt voluptate ipsum voluptatem quisquam! Facilis, architecto earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fuga expedita tempora aliquid dolorem voluptatum dolorum laboriosam enim provident quos nihil omnis qui deleniti itaque inventore vel harum, cumque quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, pariatur qui possimus non cum recusandae. Neque pariatur consequuntur ipsa quo dolor ipsam provident debitis non. Deserunt sapiente sit libero et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi neque quasi dolore adipisci enim earum quos voluptate rem molestias accusamus dolorem placeat, pariatur quis asperiores ea blanditiis deleniti repudiandae voluptatibus.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis eaque dignissimos ipsam officiis commodi quisquam recusandae? Vitae cupiditate aperiam quidem impedit neque mollitia asperiores, reiciendis beatae amet eius iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus odit magni quia, voluptas distinctio. Numquam autem harum nobis a omnis corporis nesciunt voluptate ipsum voluptatem quisquam! Facilis, architecto earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fuga expedita tempora aliquid dolorem voluptatum dolorum laboriosam enim provident quos nihil omnis qui deleniti itaque inventore vel harum, cumque quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, pariatur qui possimus non cum recusandae. Neque pariatur consequuntur ipsa quo dolor ipsam provident debitis non. Deserunt sapiente sit libero et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi neque quasi dolore adipisci enim earum quos voluptate rem molestias accusamus dolorem placeat, pariatur quis asperiores ea blanditiis deleniti repudiandae voluptatibus.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis eaque dignissimos ipsam officiis commodi quisquam recusandae? Vitae cupiditate aperiam quidem impedit neque mollitia asperiores, reiciendis beatae amet eius iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus odit magni quia, voluptas distinctio. Numquam autem harum nobis a omnis corporis nesciunt voluptate ipsum voluptatem quisquam! Facilis, architecto earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fuga expedita tempora aliquid dolorem voluptatum dolorum laboriosam enim provident quos nihil omnis qui deleniti itaque inventore vel harum, cumque quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, pariatur qui possimus non cum recusandae. Neque pariatur consequuntur ipsa quo dolor ipsam provident debitis non. Deserunt sapiente sit libero et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi neque quasi dolore adipisci enim earum quos voluptate rem molestias accusamus dolorem placeat, pariatur quis asperiores ea blanditiis deleniti repudiandae voluptatibus.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis eaque dignissimos ipsam officiis commodi quisquam recusandae? Vitae cupiditate aperiam quidem impedit neque mollitia asperiores, reiciendis beatae amet eius iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus odit magni quia, voluptas distinctio. Numquam autem harum nobis a omnis corporis nesciunt voluptate ipsum voluptatem quisquam! Facilis, architecto earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fuga expedita tempora aliquid dolorem voluptatum dolorum laboriosam enim provident quos nihil omnis qui deleniti itaque inventore vel harum, cumque quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, pariatur qui possimus non cum recusandae. Neque pariatur consequuntur ipsa quo dolor ipsam provident debitis non. Deserunt sapiente sit libero et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi neque quasi dolore adipisci enim earum quos voluptate rem molestias accusamus dolorem placeat, pariatur quis asperiores ea blanditiis deleniti repudiandae voluptatibus.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis eaque dignissimos ipsam officiis commodi quisquam recusandae? Vitae cupiditate aperiam quidem impedit neque mollitia asperiores, reiciendis beatae amet eius iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus odit magni quia, voluptas distinctio. Numquam autem harum nobis a omnis corporis nesciunt voluptate ipsum voluptatem quisquam! Facilis, architecto earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fuga expedita tempora aliquid dolorem voluptatum dolorum laboriosam enim provident quos nihil omnis qui deleniti itaque inventore vel harum, cumque quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, pariatur qui possimus non cum recusandae. Neque pariatur consequuntur ipsa quo dolor ipsam provident debitis non. Deserunt sapiente sit libero et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi neque quasi dolore adipisci enim earum quos voluptate rem molestias accusamus dolorem placeat, pariatur quis asperiores ea blanditiis deleniti repudiandae voluptatibus.</p>
+    <!--
+        somedays, some nights kenkifnkw3msdlkmnimimqweqweqqweqweqwqweweqwqwewqeqweqweqweqewewewqeqweqwewqeqqweqweqweqweqweqweqweqweqweqw
+    -->
 </body>
 </html>
