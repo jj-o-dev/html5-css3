@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(19, 194, 57);
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+
+            background-color: white;
+            text-align: justify;
+            box-shadow: 5px 5px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <h1>Testes de formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" maxlength="35" placeholder="Nome completo" autocomplete="name">
+            </p>
+
+            <p>
+                <label for="media">Média</label>
+                <input type="number" name="media" id="media" min="0" max="10" step="0.1">
+            </p>
+
+            <p>
+                <label for="periodo">Período</label>
+                <input type="month" name="periodo" id="periodo">
+            </p>
+
+            <p>
+                <label for="dprova">Dia da prova</label>
+                <input type="date" name="dprova" id="dprova">
+            </p>
+
+            <p>
+                <label for="hora">Horário</label>
+                <input type="time" name="hora" id="hora">
+            </p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </form>
+    </div>
+</body>
+</html>
