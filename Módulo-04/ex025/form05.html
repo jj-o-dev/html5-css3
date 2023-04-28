@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(248, 50, 255);
+            background-color: rgb(179, 15, 244);
         }
 
         div {
@@ -29,23 +29,44 @@
         <h1>Testes de formulário</h1>
         <form action="cadastro.php" method="post" autocomplete="on">
             <fieldset>
-                <legend>Campo obrigatório</legend>
+                <legend><Em>Esporte favorito</Em></legend>
                 <p>
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" maxlength="35" placeholder="Nome completo" autocomplete="name" required>
+                    <input type="checkbox" name="box" id="box" checked>
+                    <label for="box">Basquete</label>
                 </p>
                 <p>
-                    <label for="box">Esporte favorito</label>
-                    <input type="checkbox" name="box" id="box">
+                    <input type="checkbox" name="2box" id="2box">
+                    <label for="2box">Futebol</label>
                 </p>
                 <p>
-                    <label for="tele">Telefone</label>
-                    <input type="tel" name="tele" id="tele" required>
+                    <input type="checkbox" name="3box" id="3box">
+                    <label for="3box">Vôlei</label>
                 </p>
-            </fieldset>
+                <p>
+                    <input type="checkbox" name="4box" id="4box">
+                    <label for="4box">Automobilismo</label>
+                </p>
+                
+            </fieldset><br>
+            <fieldset>
+                <legend><Em>Quanto você gosta gosta</Em></legend>
+
+                <input type="radio" name="radio" id="radio">
+                <label for="radio">Pouco</label>
+               
+                
+                <input type="radio" name="radio" id="radio2">
+                <label for="radio2">Muito</label>
+               
+                
+                <input type="radio" name="radio" id="radio3" checked>
+                <label for="radio3">Demais!</label>
+               
+            </fieldset><br>
 
             <input type="submit" value="Enviar">
             <input type="reset" value="Apagar">
+
         </form>
     </div>
 </body>
