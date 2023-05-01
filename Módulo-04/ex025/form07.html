@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(40, 187, 163);
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+
+            background-color: white;
+            text-align: justify;
+            box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.852);
+            border-radius: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <h1>Testes de formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            
+           <p>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                
+                <option value="" selected>Escolha</option>
+                <optgroup label="Centro-oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+            </select>
+           </p>
+
+           <p>
+            <label for="prof">Profissão: </label>
+            <input type="text" name="prof" id="prof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Atleta</option>
+                <option>Bancário</option>
+                <option>Advogado</option>
+                <option>Médico</option>
+                <option>Cozinheiro</option>
+            </datalist>
+           </p>
+
+           <p>
+            <label for="msg">Mensagem: (opcional)</label>
+            <textarea name="msg" id="msg" cols="120" rows="10" style="resize:none"></textarea>
+           </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Apagar">
+            </p>
+
+        </form>
+    </div>
+</body>
+</html>

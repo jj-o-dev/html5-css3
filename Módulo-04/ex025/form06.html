@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(153, 71, 9);
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+
+            background-color: white;
+            text-align: justify;
+            box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.852);
+            border-radius: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <h1>Testes de formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            
+            <p>
+                <label for="cor">Cor:</label>
+                <input type="color" name="cor" id="cor" value="#000000">
+            </p>
+
+            <p>
+                <label for="range">Nível de satisfação:</label>
+                <input type="range" name="range" id="range" min="1" max="3">
+            </p>
+
+            <p>
+                <label for="file">Selecione um arquivo:</label>
+                <input type="file" id="file">
+            </p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+
+        </form>
+    </div>
+</body>
+</html>
