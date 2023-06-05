@@ -1,0 +1,1 @@
+O mobile first é uma estratégia de desenvolvimento que prioriza páginas pensadas primáriamente para os aparelhos mobile, com o intuito de melhorar a experiência do usuário. Dentro do algoritmo do google, páginas com a técnica de mobile first são recompensadas e priorizadas pela ferramenta de busca.
