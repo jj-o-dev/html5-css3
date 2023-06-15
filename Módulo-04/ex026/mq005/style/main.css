@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: rgb(154, 153, 153);
+    background-color: rgb(143, 143, 143);
 }
 
 header > h1 {
@@ -20,8 +20,22 @@ header > h1 {
     text-align: center;
 }
 
-menu {
+span#menu {
+    background-color: rgb(20, 20, 20);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#menu:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
 }
 
 menu > ul {
@@ -38,7 +52,7 @@ menu > ul > li > a {
     border-top: 2px solid gray;
 }
 
-menu > ul > li > a:hover {
+menu > ul > li > a:hover { /* talvez isso não seja tão útil no Mobile First */
     background-color: gray;
 }
 

@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,500,0,0" />
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/media-query.css"> 
+    
+    
 </head>
-<body>
+<body onresize="changeSize()">
     <header>
         <h1>New Page</h1>
-        <menu>
+        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="links">
             <ul>
                 <li><a href="#">Link 1</a></li>
                 <li><a href="#">Link 2</a></li>
@@ -27,12 +32,26 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo neque fuga dicta obcaecati vitae praesentium quibusdam provident quisquam, delectus, est odit porro? Aspernatur aut dignissimos ipsam at odit velit debitis? Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit facere ad doloremque repellendus repudiandae nesciunt, distinctio at ullam officiis minus maiores aspernatur vero nam dolores illum quisquam eaque. At, voluptate.
             </p><br>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius nostrum doloribus laborum quisquam quis? Illum eveniet cum omnis culpa mollitia eligendi velit magni, est excepturi rerum natus in tempora. Dolorum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptate, quasi illum repudiandae accusantium exercitationem asperiores, quibusdam harum similique, necessitatibus porro obcaecati ipsum nesciunt! Saepe quae vel ea repudiandae tempora. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo neque fuga dicta obcaecati vitae praesentium quibusdam provident quisquam, delectus, est odit porro? Aspernatur aut dignissimos ipsam at odit velit debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facilis distinctio.</p><br>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo neque fuga dicta obcaecati vitae praesentium quibusdam provident quisquam, delectus, est odit porro? Aspernatur aut dignissimos ipsam at odit velit debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facilis distinctio, beatae cum possimus incidunt. Repudiandae magnam expedita harum laborum nostrum qui! Dolorem recusandae accusamus dicta sequi aspernatur reprehenderit odio.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo neque fuga dicta obcaecati vitae praesentium quibusdam provident quisquam, delectus, est odit porro? Aspernatur aut dignissimos ipsam at odit velit debitis? Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit facere ad doloremque repellendus repudiandae nesciunt, distinctio at ullam officiis minus maiores aspernatur vero nam dolores illum quisquam eaque. At, voluptate.
-            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius nostrum doloribus laborum quisquam quis? Illum eveniet cum omnis culpa mollitia eligendi velit magni, est excepturi rerum natus in tempora. Dolorum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptate, quasi illum repudiandae accusantium exercitationem asperiores, quibusdam harum similique, necessitatibus porro obcaecati ipsum nesciunt! Saepe quae vel ea repudiandae tempora. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo neque fuga dicta obcaecati vitae praesentium quibusdam provident quisquam, delectus, est odit porro? Aspernatur aut dignissimos ipsam at odit velit debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facilis distinctio.</p>
         </article>
     </main>
+    <script>
+
+        function changeSize() {
+            if (window.innerWidth >= 768) {
+                links.style.display = 'block'
+            } else {
+                links.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+           if (links.style.display == 'block') {
+                links.style.display = 'none'
+           } else {
+                links.style.display = 'block'
+           }
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Breakpoits 
+Telas bem pequenas: até 576px
+Celular: 576px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Telas grandes: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) {
+    span#menu {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        width: 130px;
+    }
+
+    main {
+        width: 700px;
+    }
+}
